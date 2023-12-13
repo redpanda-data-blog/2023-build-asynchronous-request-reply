@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Image Processor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 text-white text-lg">
+        Async Image Processor
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex flex-row h-screen">
+        
+        <!-- Left Column -->
+        <div class="w-1/3 p-4">
+            <div class="flex flex-col items-center">
+                <input type="file" id="imageInput" class="mb-4" />
+                <button id="processButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Process Image
+                </button>
+                <img id="selectedImage" class="mt-4 max-h-64" />
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="w-2/3 p-4">
+            <div id="imageGrid" class="grid grid-cols-3 gap-4">
+                <!-- Images will be added here -->
+            </div>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
